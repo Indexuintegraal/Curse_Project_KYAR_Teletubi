@@ -1,0 +1,90 @@
+header {
+    background-color: rgba(0,0,0,1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    height: 60px; /* Высота header */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+    nav {
+      padding: 0 20px;
+    }
+  }
+  nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  nav ul li {
+    margin-right: 20px; /* Отступ между кнопками */
+  }
+  
+  nav ul li:last-child {
+    margin-right: 0; /* Убираем отступ у последней кнопки */
+  }
+  
+  nav ul li a {
+    display: block;
+    padding: 10px 0;
+    width: 146px;
+    text-align: center;
+    color:  white;
+    text-decoration: none;
+  }
+  .burger {
+    width: 35px;
+    height: 25px;
+    cursor: pointer;
+    // background-color: transparent;
+    // border: none;
+    position: relative;
+    display: none;
+    &::before, &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 3px;
+        background-color: #fff;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+        transition: transform 0.4s;
+    }
+    span {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+        height: 3px;
+        background-color: #fff;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+        transition: transform 0.4s;
+    }
+    &::after {
+        top: auto;
+        bottom: 0;
+    }
+    &.is-active {
+     span {
+         transform: rotate(45deg);
+         box-shadow: none;
+     }
+     &::before {
+         transform: rotate(135deg) translate(9px, -8px);
+         box-shadow: none;
+     }
+     &::after {
+         transform: rotate(45deg) translate(-7px, -7px);
+         box-shadow: none;
+     }
+    }
+ }
+ 

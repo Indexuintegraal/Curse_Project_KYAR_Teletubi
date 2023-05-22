@@ -1,0 +1,24 @@
+footer{
+    color:white;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    height: 77px;
+    align-items: center;
+    p{
+      margin: 5px;
+    }
+  }
+.footer {
+  &-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    
+    align-items: center;
+  }
+  &-text-right {
+    margin-left: auto;
+    margin-right: 7%;
+  }
+}

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   sodipodi:docname="teletubis.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="2.0510461"
+     inkscape:cx="193.80354"
+     inkscape:cy="377.61218"
+     inkscape:window-width="1920"
+     inkscape:window-height="1001"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <linearGradient
+       id="linearGradient7396"
+       inkscape:swatch="gradient">
+      <stop
+         style="stop-color:#ffff00;stop-opacity:1;"
+         offset="0"
+         id="stop7392" />
+      <stop
+         style="stop-color:#ffff00;stop-opacity:0;"
+         offset="1"
+         id="stop7394" />
+    </linearGradient>
+    <rect
+       x="203.31088"
+       y="307.64788"
+       width="113.60056"
+       height="22.427579"
+       id="rect3149" />
+    <rect
+       x="202.33577"
+       y="312.03588"
+       width="107.26234"
+       height="18.527131"
+       id="rect3143" />
+    <rect
+       x="128.24856"
+       y="485.41392"
+       width="321.31092"
+       height="104.80528"
+       id="rect113" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient7396"
+       id="linearGradient7400"
+       x1="52.628386"
+       y1="83.469289"
+       x2="74.145934"
+       y2="83.469289"
+       gradientUnits="userSpaceOnUse" />
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter16514"
+       x="-0.01089071"
+       y="-0.010700485"
+       width="1.0217803"
+       height="1.0205697">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.043856236"
+         id="feGaussianBlur16516" />
+    </filter>
+  </defs>
+  <g
+     inkscape:label="Слой 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       sodipodi:type="spiral"
+       style="mix-blend-mode:normal;fill:none;fill-rule:evenodd;stroke:#ffd900;stroke-width:0.264583;stroke-opacity:1;filter:url(#filter16514)"
+       id="path224"
+       sodipodi:cx="60.93243"
+       sodipodi:cy="109.82432"
+       sodipodi:expansion="1"
+       sodipodi:revolution="3"
+       sodipodi:radius="12.728502"
+       sodipodi:argument="-17.755226"
+       sodipodi:t0="0"
+       d="m 60.93243,109.82432 c 0.2927,0.5671 -0.62004,0.67434 -0.942568,0.48648 -0.874029,-0.50908 -0.640706,-1.76225 -0.0304,-2.37162 1.091689,-1.09002 2.893455,-0.6835 3.800675,0.42568 1.331383,1.62777 0.732774,4.04189 -0.881761,5.22973 -2.151922,1.58321 -5.196679,0.78511 -6.658782,-1.33784 -1.839908,-2.67153 -0.839103,-6.35457 1.793926,-8.08784 3.18895,-2.09922 7.514202,-0.89406 9.516889,2.25001 2.360097,3.70517 0.949628,8.67494 -2.706091,10.94594 -4.220672,2.62197 -9.836401,1.0056 -12.374996,-3.16217 -2.884513,-4.73569 -1.06186,-10.99838 3.618255,-13.80405 5.250382,-3.147541 12.16073,-1.118324 15.233104,4.07434 3.410917,5.76483 1.17494,13.32336 -4.53042,16.66215"
+       transform="translate(6.0629628,-25.025847)" />
+    <ellipse
+       style="fill:#7eff00;stroke:#ffd900;stroke-width:0.264583;stroke-opacity:1;fill-opacity:1"
+       id="path955"
+       cx="66.692589"
+       cy="83.462494"
+       rx="23.090858"
+       ry="6.1919618" />
+    <text
+       xml:space="preserve"
+       transform="scale(0.26458333)"
+       id="text3141"
+       style="fill:#7eff00;stroke:#ffd900;stroke-opacity:1;fill-opacity:1;white-space:pre;shape-inside:url(#rect3143)" />
+    <text
+       xml:space="preserve"
+       transform="scale(0.26458333)"
+       id="text3147"
+       style="fill:#7eff00;stroke:#ffd900;stroke-opacity:1;fill-opacity:1;white-space:pre;shape-inside:url(#rect3149)" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.175px;font-family:Architun;-inkscape-font-specification:'Architun, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;inline-size:27.4449;fill:#2fffc5;fill-opacity:1;stroke:#ff8b00;stroke-width:0.265;stroke-dasharray:none;stroke-opacity:1;image-rendering:auto"
+       x="52.760677"
+       y="84.623482"
+       id="text3155"
+       transform="matrix(2.5502341,0,0,5.2800916,-86.172426,-358.2781)"><tspan
+         x="52.760677"
+         y="84.623482"
+         id="tspan17059">ТЕЛЕПУЗИКИ</tspan></text>
+    <path
+       style="fill:#2fffc5;fill-opacity:1;stroke:#ff8b00;stroke-width:0.264999;stroke-dasharray:none;stroke-opacity:1"
+       d="m 77.270527,79.721512 c 0.902994,-1.031994 6.57896,-10.577936 6.57896,-10.577936"
+       id="path16669" />
+    <path
+       style="fill:#2fffc5;fill-opacity:1;stroke:#ff8b00;stroke-width:0.264999;stroke-dasharray:none;stroke-opacity:1"
+       d="m 54.308665,69.014576 3.095983,9.158946"
+       id="path16671" />
+  </g>
+</svg>

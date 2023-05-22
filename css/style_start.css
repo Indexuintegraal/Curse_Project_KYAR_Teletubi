@@ -1,0 +1,258 @@
+@charset "UTF-8";
+header {
+  background-color: rgb(0, 0, 0);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  height: 60px; /* Высота header */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1;
+}
+header nav {
+  padding: 0 20px;
+}
+
+nav ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav ul li {
+  margin-right: 20px; /* Отступ между кнопками */
+}
+
+nav ul li:last-child {
+  margin-right: 0; /* Убираем отступ у последней кнопки */
+}
+
+nav ul li a {
+  display: block;
+  padding: 10px 0;
+  width: 146px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+}
+
+.burger {
+  width: 35px;
+  height: 25px;
+  cursor: pointer;
+  position: relative;
+  display: none;
+}
+.burger::before, .burger::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  transition: transform 0.4s;
+}
+.burger span {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  transition: transform 0.4s;
+}
+.burger::after {
+  top: auto;
+  bottom: 0;
+}
+.burger.is-active span {
+  transform: rotate(45deg);
+  box-shadow: none;
+}
+.burger.is-active::before {
+  transform: rotate(135deg) translate(9px, -8px);
+  box-shadow: none;
+}
+.burger.is-active::after {
+  transform: rotate(45deg) translate(-7px, -7px);
+  box-shadow: none;
+}
+
+footer {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  height: 77px;
+  align-items: center;
+}
+footer p {
+  margin: 5px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+.footer-text-right {
+  margin-left: auto;
+  margin-right: 7%;
+}
+
+@font-face {
+  font-family: circleRegular;
+  src: url("../fonts/circle/Circe-Regular.ttf");
+}
+body {
+  font-family: circleRegular;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.6) 30%, rgba(0, 0, 0, 0.4) 40%, rgba(0, 128, 255, 0) 50%), url("../images/teletubi.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 90px;
+}
+
+.opisanie {
+  display: inline-block;
+  padding: 12% 50px 0 50px;
+  color: white;
+  text-align: justify;
+  width: 350px;
+  line-height: 1.5;
+  font-size: 18px;
+}
+
+.pleer {
+  width: fit-content;
+  margin: 0 auto;
+  align-self: center;
+  position: relative;
+}
+.pleer video {
+  min-width: 300px;
+  max-width: 50vw;
+  width: 100%;
+  height: auto;
+}
+
+.play-prompt {
+  color: white;
+  font-size: 25px;
+  font-family: sans-serif;
+  box-shadow: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  width: 300px;
+  top: 50%;
+  left: 53%;
+  transform: translate(-50%, -50%);
+  user-select: none;
+}
+
+.play-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #FFC107;
+  color: #fff;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.play-button:hover {
+  background-color: #FF9800;
+}
+
+@media (max-width: 1500px) {
+  footer {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    height: 77px;
+    align-items: center;
+  }
+}
+@media (max-width: 1000px) {
+  .burger {
+    display: block;
+    position: absolute;
+    right: 55px;
+  }
+  .menu {
+    width: 32.5%;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: #eee;
+    color: #000;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+  }
+  .menu.is-open {
+    transform: translateX(0vw);
+  }
+  .menu ul {
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow-y: auto;
+  }
+  .menu ul li a {
+    text-align: left;
+    color: #000;
+    width: auto;
+    padding: 10px;
+    margin: 0;
+  }
+  body {
+    background: url("../images/teletubi.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .opisanie {
+    flex-basis: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 30%, transparent 100%);
+  }
+  footer {
+    width: 100vw;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    height: 77px;
+    align-items: center;
+  }
+  .discriptndplaya {
+    display: flex;
+    flex-direction: column;
+  }
+  .sidebar {
+    padding-left: 0;
+  }
+  .description {
+    padding-top: 14%;
+  }
+}
+@media (max-width: 800px) {
+  .discriptndplaya {
+    display: flex;
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=style_start.css.map */

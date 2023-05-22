@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Сериал "Телепузики"</title>
+    <link rel="stylesheet" href="/css/style_series.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./scripts/menu-burger.js"></script>
+</head>
+<body>
+    <header>
+      <div class="logo">
+        <img src="images/logo.svg" alt="Logo" width="200" height="66" style="position: absolute; left: 0px; top: 0px;"></img>
+      </div>
+      <div class="burger">
+        
+          <span></span>
+      </div>
+      <nav class="menu">
+        <ul>
+          <li><a href="/telepuzis1.html">Главная</a></li>
+          <li><a href="/telepuzis_like.html">Похожее</a></li>
+          <li><a href="/telepuzis_series.html">Серии</a></li>
+        </ul>
+      </nav>
+    </header>
+	
+  <h1 class="seasontag">Сезон 1</h1>
+	<main class="grid-container">
+        <div class="grid-item">
+          <img class="imggrid" id="1" src="images/geg1.jpg" alt="">
+          <img src="images/play_button.svg" class="playbuttonvid" alt="Logo"></img>
+          <div class="description">
+            <h3>Серия 1</h3>
+            
+          </div>
+        </div>
+        <div class="grid-item">
+          <img class="imggrid" id="2" src="images/geg2.jpg" alt="">
+          <img src="images/play_button.svg" class="playbuttonvid" alt="Logo"></img>
+          <div class="description">
+            <h3>Серия 2</h3>
+            
+          </div>
+        </div>
+        <div class="grid-item">
+          <img class="imggrid" id="3" src="images/geg3.jpg" alt="">
+          <img src="images/play_button.svg" class="playbuttonvid" alt="Logo"></img>
+          <div class="description">
+            <h3>Серия 3</h3>
+          </div>
+        </div>
+        <div class="grid-item">
+          <img class="imggrid" id="4" src="images/geg4.jpg" alt="">
+          <img src="images/play_button.svg" class="playbuttonvid" alt="Logo"></img>
+          <div class="description">
+            <h3>Серия 4</h3>
+            
+          </div>
+        </div>
+        <div class="grid-item">
+          <img class="imggrid" id="5" src="images/geg5.jpg" alt="">
+          <img src="images/play_button.svg" class="playbuttonvid" alt="Logo"></img>
+          <div class="description">
+            <h3>Серия 5</h3>
+            
+          </div>
+        </div>
+        <div class="grid-item">
+          <img class="imggrid" id="6" src="images/geg6.jpg" alt="">
+          <img src="images/play_button.svg" class="playbuttonvid" alt="Logo" ></img>
+          <div class="description">
+            <h3>Серия 6</h3>
+            
+          </div>
+        </div>
+        <div class="grid-item">
+          <img class="imggrid" id="7" src="images/geg7.webp" alt="">
+          <img src="images/play_button.svg" class="playbuttonvid" alt="Logo"></img>
+          <div class="description">
+            <h3>Серия 7</h3>
+            
+          </div>
+        </div>
+        <div class="grid-item">
+          <img class="imggrid" id="8" src="images/geg8.jpg" alt="">
+          <img src="images/play_button.svg" class="playbuttonvid" alt="Logo"></img>
+          <div class="description">
+            <h3>Серия 8</h3>
+          </div>
+        </div>
+        <div class="grid-item">
+          <img src="images/coming_soon.jpg" alt="">
+        </div>
+        <div class="grid-item">
+          <img src="images/coming_soon.jpg" alt="">
+        </div>
+        <div class="grid-item">
+          <img src="images/coming_soon.jpg" alt="">
+        </div>
+        <div class="grid-item">
+          <img src="images/coming_soon.jpg" alt="">
+        </div>
+      
+      </main>
+
+	<footer>
+    <div class="footer-content">
+        <nav>
+            <ul>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </nav>
+        <p class="footer-text-right">© 1997-2023 Телепузики. Все права защищены.</p>
+    </div>
+	</footer>
+</body>
+
+<script src="scripts/other.js"></script>
+<script>
+  // Функция для обработки клика на картинку
+function handleImageClick(event) {
+  const episodeId = event.target.id;
+
+  // Переход на другую страницу с передачей номера серии через параметр URL
+  window.location.href = `/telepuzis_playa.html?episode=${episodeId}`;
+}
+
+// Получение всех элементов картинок
+const imageElements = document.querySelectorAll('.imggrid');
+
+// Добавление обработчика клика для каждой картинки
+imageElements.forEach((imageElement, index) => {
+  // Получение номера серии из индекса элемента
+  const episodeNumber = index + 1;
+
+  // Установка атрибута "data-episode-id" с номером серии для передачи на другую страницу
+  imageElement.id = episodeNumber;
+
+  // Добавление обработчика клика на картинку
+  imageElement.addEventListener('click', handleImageClick);
+});
+
+</script>
+
+
+</html>

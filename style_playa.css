@@ -1,0 +1,270 @@
+@font-face {
+  font-family: myFont;
+  src: url('fonts/Architun.ttf');
+}
+body {
+    font-family:myFont, sans-serif;
+    background:linear-gradient(to right, rgba(0,0,0,0.6) 30%,rgba(0,0,0,0.4) 100%) , url("images/teletubi.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    background-color: black;
+    
+  }
+ 
+  main{
+    width: 100vw;
+    height: 100vh;
+  }
+header {
+    background-color: rgba(0,0,0,0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    height: 60px; /* Высота header */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px; /* Отступы внутри header */
+    z-index: 1;
+  }
+  
+  .logo img {
+    display: block;
+  }
+  
+  nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  nav ul li {
+    margin-right: 20px; /* Отступ между кнопками */
+  }
+  
+  nav ul li:last-child {
+    margin-right: 0; /* Убираем отступ у последней кнопки */
+  }
+  
+  nav ul li a {
+    display: block;
+    padding: 10px 0;
+    width: 146px;
+    text-align: center;
+    color:  white;
+    text-decoration: none;
+  }
+  footer{
+    position: sticky;
+    color:white;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 77px;
+    align-items: center;
+  }
+  footer p{
+    margin: 5px;
+  }
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    
+    align-items: center;
+  }
+  .footer-text-right {
+    margin-left: auto;
+    margin-right: 7%;
+  }
+  video {
+    
+    max-width: 70%;
+    max-height: 70%;
+  }
+  .player-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  button {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  svg {
+    width: 100%;
+    height: 100%;
+  }
+  
+  
+  .controls {
+    margin-top: 20px;
+  }
+  
+  #play-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  #play-button svg {
+    fill: #fff;
+    width: 40%;
+    height: 40%;
+  }
+  .player-container .playbuttonvid {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 80px;
+    width: 80px;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 0.2s ease-out;
+    
+  }
+   /* .sidebar {
+    position: absolute;
+    height: calc(100vh - (60px +  77px));
+  overflow-y: auto;
+    top: 77px;
+    left: 0;
+    
+    width: 230px; 
+    background-color: black; 
+    overflow-y: scroll; 
+    z-index: 0;
+    
+  }
+   
+  .sidebar .sideimg {
+    display: block;
+    margin: 10px;
+    
+  }
+  .sideimg img{
+    width: 200px;
+  height: 100px;
+  }
+  .imgside .pbside{
+    position:absolute;
+    top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 50px;
+  width: 50px;
+
+  }
+  .sideimg {
+    position: relative;
+    display: inline-block;
+    padding-top:8px;
+  }
+  .sidebar::-webkit-scrollbar {
+    width: 10px; 
+  }
+  
+  .sidebar::-webkit-scrollbar-track {
+    background-color: #f1f1f1; 
+  }
+  
+  .sidebar::-webkit-scrollbar-thumb {
+    background-color: #888; 
+  }
+  
+  .sidebar::-webkit-scrollbar-thumb:hover {
+    background-color: #555; 
+  } */
+  .sidebar {
+    position: relative;
+    top: 0px; /* Учитывайте высоту блока player-container */
+    left: 0;
+    width: 100%;
+    height: 200px; /* Учитывайте высоту блока player-container и размеры header и footer */
+    background-color: black;
+    overflow-x: auto; /* Используйте горизонтальную прокрутку, если содержимое не помещается */
+    white-space: nowrap; /* Предотвращает перенос содержимого на новую строку */
+    width: 100%;
+  }
+  
+  .sideimg {
+    display: inline-block; /* Используйте блочно-строчный элемент для выравнивания в ряд */
+    vertical-align: top; /* Выравнивание по верхнему краю для избежания вертикальных смещений */
+    margin: 10px; /* Отступы между изображениями */
+  }
+  
+  .sideimg img {
+    width: 200px;
+    height: 100px;
+  }
+  
+  .imgside {
+    position: relative;
+  }
+  
+  .pbside {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 50px;
+    width: 50px;
+  }
+  
+  
+  .sidebar::-webkit-scrollbar {
+    width: 10px; /* Ширина полосы прокрутки */
+  }
+  
+  .sidebar::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Цвет фона полосы прокрутки */
+  }
+  
+  .sidebar::-webkit-scrollbar-thumb {
+    background-color: #888; /* Цвет полосы прокрутки */
+  }
+  
+  .sidebar::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Цвет полосы прокрутки при наведении */
+  }
+
+
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+  }
+  
+  main {
+    flex: 1; /* Занимает все доступное пространство между заголовком и футером */
+    
+  }
+ 
+  
+  
+  
+ 

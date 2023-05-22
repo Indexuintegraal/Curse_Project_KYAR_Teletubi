@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	  <title>Сериал "Телепузики"</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style_playa.css">
+    <script src="./scripts/menu-burger.js"></script>
+</head>
+<body>
+	<header>
+  <div class="logo">
+    <img src="images/logo.svg" alt="Logo" width="200" height="66" style="position: absolute; left: 0px; top: 0px;"></img>
+  </div>
+  <div class="burger">
+    
+      <span></span>
+  </div>
+  <nav class="menu">
+    <ul>
+      <li><a href="/telepuzis1.html">Главная</a></li>
+      <li><a href="/telepuzis_like.html">Похожее</a></li>
+      <li><a href="/telepuzis_series.html">Серии</a></li>
+    </ul>
+  </nav>
+	</header>
+<main>
+    <div class="discriptndplaya">
+      <div class="description">
+        <h1>Серия 1</h1>
+        <p>Четверо друзей живут за горами, за лесами в волшебной стране. Встречайте: Тинки-Винки, Дипси, Ля-Ля и По. Все они разных цветов, 
+        и каждому определенное количество лет: четыре года, три, два и один. В каждой новой серии, Телепузики попадают в различные приключения,
+        их ждут прогулки и обязательно обед.</p>
+      </div>
+      <div class="player-container">
+        <img id="play-button" src="images/play_button.svg" class="playbuttonvid" alt="Logo" width="200" height="66"></img>
+        <video id="videoPlayer"  controls></video>
+    </div>
+  </div>
+  <h1 class="season1">Сезон 1</h1>
+  <div class="sidebar">
+    <div class="sideimg">
+      <div class="imgside">
+        <img class="pbside" src="images/play_button.svg" alt="">
+        <img id="1" class="pbimg" src="images/geg.jpg" alt="">
+        <h3 class="pbseria">Серия 1</h3>
+      </div>
+    </div>
+    <div class="sideimg">
+      <div class="imgside">
+        <img class="pbside" src="images/play_button.svg" alt="">
+        <img id="2" class="pbimg" src="images/geg1.jpg" alt="">
+        <h3 class="pbseria">Серия 2</h3>
+      </div>
+    </div>
+    <div class="sideimg">
+      <div class="imgside">
+      <img class="pbside" src="images/play_button.svg" alt="">
+      <img id="3" class="pbimg" src="images/geg2.jpg" alt="">
+      <h3 class="pbseria">Серия 3</h3>
+    </div>
+  </div>
+    <div class="sideimg">
+      <div class="imgside">
+      <img class="pbside" src="images/play_button.svg" alt="">
+      <img id="4" class="pbimg" src="images/geg3.jpg" alt="">
+      <h3 class="pbseria">Серия 4</h3>
+      </div>
+    </div>
+    <div class="sideimg">
+      <div class="imgside">
+      <img class="pbside" src="images/play_button.svg" alt="">
+      <img id="5" class="pbimg" src="images/geg4.jpg" alt="">
+      <h3 class="pbseria">Серия 5</h3>
+      </div>
+    </div>
+    <div class="sideimg">
+      <div class="imgside">
+      <img class="pbside" src="images/play_button.svg" alt="">
+      <img id="6" class="pbimg" src="images/geg5.jpg" alt="">
+      <h3 class="pbseria">Серия 6</h3>
+      </div>
+    </div>
+    <div class="sideimg">
+      <div class="imgside">
+      <img class="pbside" src="images/play_button.svg" alt="">
+      <img id="7" class="pbimg" src="images/geg6.jpg" alt="">
+      <h3 class="pbseria">Серия 7</h3>
+      </div>
+    </div>
+    <div class="sideimg">
+      <div class="imgside">
+      <img class="pbside" src="images/play_button.svg" alt="">
+      <img id="8" class="pbimg" src="images/geg7.webp" alt="">
+      <h3 class="pbseria">Серия 8</h3>
+      </div>
+    </div>
+    
+  </div> 
+ 
+</main>
+	<footer>
+    <div class="footer-content">
+        <nav>
+            <ul>
+              <!-- <li><a href="#">Главная</a></li>
+              <li><a href="#">О сериале</a></li> -->
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </nav>
+        <p class="footer-text-right">© 1997-2023 Телепузики. Все права защищены.</p>
+    </div>
+	</footer>
+  
+  <script src="scripts/playa2.js" type="text/javascript"></script>
+  <script>
+    const video = document.querySelector('video');
+const playPrompt = document.getElementById('play-prompt');
+const playButton = document.getElementById('play-button');
+
+playButton.addEventListener('click', function() {
+  if (video.paused) {
+    video.play();
+    playButton.style.display = 'none';
+  } else {
+    video.pause();
+    playButton.style.display = 'block';
+  }
+});
+
+video.addEventListener('play', function() {
+  playButton.style.display = 'none';
+});
+
+video.addEventListener('pause', function() {
+  playButton.style.display = 'block';
+});
+
+video.addEventListener('ended', function() {
+  playButton.style.display = 'block';
+});
+  </script>
+</body>
+</html>

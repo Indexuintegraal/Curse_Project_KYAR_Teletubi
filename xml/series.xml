@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<series>
+  <episode>
+    <number>1</number>
+    <video>vids/vid1.mp4</video>
+  </episode>
+  <episode>
+    <number>2</number>
+    <video>vids/vid2.mp4</video>
+  </episode>
+  <episode>
+    <number>3</number>
+    <video>vids/vid3.mp4</video>
+  </episode>
+  <episode>
+    <number>4</number>
+    <video>vids/vid4.mp4</video>
+  </episode>
+  <episode>
+    <number>5</number>
+    <video>vids/vid5.mp4</video>
+  </episode>
+  <episode>
+    <number>6</number>
+    <video>vids/vid6.mp4</video>
+  </episode>
+  <episode>
+    <number>7</number>
+    <video>vids/vid7.mp4</video>
+  </episode>
+  <episode>
+    <number>8</number>
+    <video>vids/vid8.mp4</video>
+  </episode>
+</series>
