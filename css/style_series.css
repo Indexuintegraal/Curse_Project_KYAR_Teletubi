@@ -16,8 +16,7 @@ header {
 header nav {
   padding: 0 20px;
 }
-
-nav ul {
+header nav ul {
   display: flex;
   margin: 0;
   padding: 0;
@@ -87,6 +86,10 @@ nav ul li a {
   box-shadow: none;
 }
 
+@font-face {
+  font-family: circleRegular;
+  src: url("../fonts/circle/Circe-Regular.ttf");
+}
 footer {
   color: white;
   display: flex;
@@ -104,6 +107,36 @@ footer p {
   justify-content: space-between;
   width: 100%;
   align-items: center;
+}
+.footer-content__menu-contacts-button {
+  background: none;
+  outline: none;
+  border: none;
+  color: white;
+  font-family: circleRegular;
+  font-size: 16px;
+}
+.footer-content__menu-contacts-nav {
+  position: absolute;
+  z-index: -1;
+  background: #fff;
+  transform: translateY(20%);
+  transition: transform 0.3s;
+}
+.footer-content__menu-contacts-nav.opened {
+  transform: translateY(-135%);
+}
+.footer-content__menu-contacts-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.footer-content__menu-contacts-nav ul li {
+  border-bottom: 2px solid #8e8e8e;
+}
+.footer-content__menu-contacts-nav ul li a {
+  color: #000;
+  text-decoration: none;
 }
 .footer-text-right {
   margin-left: auto;
@@ -130,11 +163,11 @@ main {
 
 .opisanie {
   padding-top: 20%;
-  color: white;
+  color: #fff;
 }
 
 .play-prompt {
-  color: white;
+  color: #fff;
   font-size: 25px;
   font-family: sans-serif;
   box-shadow: rgba(0, 0, 0, 0.6);
@@ -234,7 +267,7 @@ main {
 }
 .description {
   position: absolute;
-  color: white;
+  color: #fff;
   margin: 0;
   font-size: 18px;
   width: 100%;
@@ -276,7 +309,7 @@ main {
 
 .seasontag {
   position: relative;
-  color: white;
+  color: #fff;
   padding-left: 80px;
   margin: 100px auto;
   margin-bottom: 0;
@@ -297,10 +330,10 @@ main {
 }
 @media (max-width: 1500px) {
   footer {
-    color: white;
+    color: #fff;
     display: flex;
     justify-content: space-between;
-    background-color: black;
+    background-color: #000;
     height: 77px;
     align-items: center;
   }
@@ -347,10 +380,10 @@ main {
   }
   footer {
     width: 100vw;
-    color: white;
+    color: #fff;
     display: flex;
     justify-content: space-between;
-    background-color: black;
+    background-color: #000;
     height: 77px;
     align-items: center;
   }

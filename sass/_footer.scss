@@ -1,3 +1,4 @@
+@use "variables" as *;
 footer{
     color:white;
     display: flex;
@@ -10,12 +11,47 @@ footer{
     }
   }
 .footer {
+  // position: relative;
+  // z-index: 1;
   &-content {
     display: flex;
     justify-content: space-between;
     width: 100%;
     
     align-items: center;
+  &__menu-contacts {
+    &-button {
+      background: none;
+      outline: none;
+      border:none;
+      color: white;
+      font-family: circleRegular;
+      font-size: 16px;
+    }
+    &-nav {
+      // display: none;
+      position: absolute;
+      z-index: -1;
+      background: #fff;
+      transform: translateY(20%);
+      transition: transform 0.3s;
+      &.opened {
+        transform: translateY(-135%);
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        li {
+           border-bottom: 2px solid #8e8e8e;
+           a {
+            color: #000;
+            text-decoration: none;
+           }
+        }
+      }
+    }
+  }
   }
   &-text-right {
     margin-left: auto;
