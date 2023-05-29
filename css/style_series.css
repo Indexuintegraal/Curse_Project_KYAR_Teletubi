@@ -130,11 +130,11 @@ main {
 
 .opisanie {
   padding-top: 20%;
-  color: white;
+  color: #fff;
 }
 
 .play-prompt {
-  color: white;
+  color: #fff;
   font-size: 25px;
   font-family: sans-serif;
   box-shadow: rgba(0, 0, 0, 0.6);
@@ -234,7 +234,7 @@ main {
 }
 .description {
   position: absolute;
-  color: white;
+  color: #fff;
   margin: 0;
   font-size: 18px;
   width: 100%;
@@ -276,7 +276,7 @@ main {
 
 .seasontag {
   position: relative;
-  color: white;
+  color: #fff;
   padding-left: 80px;
   margin: 100px auto;
   margin-bottom: 0;
@@ -297,10 +297,10 @@ main {
 }
 @media (max-width: 1500px) {
   footer {
-    color: white;
+    color: #fff;
     display: flex;
     justify-content: space-between;
-    background-color: black;
+    background-color: #000;
     height: 77px;
     align-items: center;
   }
@@ -347,10 +347,10 @@ main {
   }
   footer {
     width: 100vw;
-    color: white;
+    color: #fff;
     display: flex;
     justify-content: space-between;
-    background-color: black;
+    background-color: #000;
     height: 77px;
     align-items: center;
   }

@@ -182,10 +182,10 @@ main {
 
 @media (max-width: 1500px) {
   footer {
-    color: white;
+    color: #fff;
     display: flex;
     justify-content: space-between;
-    background-color: black;
+    background-color: #000;
     height: 77px;
     align-items: center;
   }
@@ -232,10 +232,10 @@ main {
   }
   footer {
     width: 100vw;
-    color: white;
+    color: #fff;
     display: flex;
     justify-content: space-between;
-    background-color: black;
+    background-color: #000;
     height: 77px;
     align-items: center;
   }
