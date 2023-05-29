@@ -81,3 +81,12 @@
        
     }
 }
+@media (max-width: 600px) {
+    .footer {
+        &-content {
+            &__menu-contacts-button {
+                padding: 0 15px;
+            }
+        }
+    }
+}

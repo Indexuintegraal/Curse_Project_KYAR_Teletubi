@@ -115,9 +115,12 @@ footer p {
   color: white;
   font-family: circleRegular;
   font-size: 16px;
+  padding-left: 50px;
+  cursor: pointer;
 }
 .footer-content__menu-contacts-nav {
   position: absolute;
+  width: max-content;
   z-index: -1;
   background: #fff;
   transform: translateY(20%);
@@ -133,10 +136,15 @@ footer p {
 }
 .footer-content__menu-contacts-nav ul li {
   border-bottom: 2px solid #8e8e8e;
+  text-align: center;
+  width: 100%;
 }
 .footer-content__menu-contacts-nav ul li a {
+  width: auto;
+  padding: 10px;
   color: #000;
   text-decoration: none;
+  text-align: center;
 }
 .footer-text-right {
   margin-left: auto;
@@ -287,5 +295,10 @@ main {
   .discriptndplaya {
     display: flex;
     flex-direction: column;
+  }
+}
+@media (max-width: 600px) {
+  .footer-content__menu-contacts-button {
+    padding: 0 15px;
   }
 }/*# sourceMappingURL=style_start.css.map */
