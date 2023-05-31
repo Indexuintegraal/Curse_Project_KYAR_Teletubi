@@ -17,13 +17,16 @@ function loadXML(url, callback, callbackDefault) {
 }
 
 // Функция для обновления информации о серии
-function updateEpisodeInfo(episodeNumber, videoSrc) {
+function updateEpisodeInfo(episodeNumber, videoSrc, videoDscr) {
   const episodeTitleElement = document.querySelector('.description h1');
   const videoElement = document.querySelector('.player-container video');
+  const descriptionElement = document.querySelector('.description p');
 
   // Обновление заголовка и ссылки на видео
   episodeTitleElement.textContent = `Серия ${episodeNumber}`;
   videoElement.src = videoSrc;
+  descriptionElement.textContent=videoDscr;
+
 }
 
 // Обработка клика на картинку
@@ -35,20 +38,23 @@ function handleImageClick(event) {
     const episodeElements = xml.querySelectorAll('episode');
     let episodeNumber = -1;
     let videoSrc = '';
+    let videoDscr='';
 
     // Поиск соответствующей серии в XML по номеру эпизода
     episodeElements.forEach((episodeElement) => {
       const numberElement = episodeElement.querySelector('number');
       const videoElement = episodeElement.querySelector('video');
+      const descriptionElement=episodeElement.querySelector('description');
       if (numberElement && videoElement && numberElement.textContent === episodeId) {
         episodeNumber = parseInt(numberElement.textContent);
         videoSrc = videoElement.textContent;
+        videoDscr=descriptionElement.textContent;
       }
     });
 
     // Обновление информации о серии
     if (episodeNumber !== -1) {
-      updateEpisodeInfo(episodeNumber, videoSrc);
+      updateEpisodeInfo(episodeNumber, videoSrc, videoDscr);
     }
   }, loadDefaultEpisode); // Добавление обработчика по умолчанию
 }
@@ -77,9 +83,9 @@ function loadDefaultEpisode() {
     const episodeElements = xml.querySelectorAll('episode');
     const episodeNumber = episodeNum != undefined ? episodeNum : parseInt(episodeElements[0].querySelector("number").textContent);
     const videoSrc = episodeNum != undefined ? episodeElements[episodeNum-1].querySelector('video').textContent : episodeElements[0].querySelector('video').textContent;
-  
+    const videoDscr = episodeNum != undefined ? episodeElements[episodeNum-1].querySelector('description').textContent : episodeElements[0].querySelector('description').textContent;
       // Обновление информации о серииs
-      updateEpisodeInfo(episodeNumber, videoSrc);
+      updateEpisodeInfo(episodeNumber, videoSrc, videoDscr);
     // }
   });
 }

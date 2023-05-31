@@ -88,16 +88,16 @@
             <h3>Серия 8</h3>
           </div>
         </div>
-        <div class="grid-item">
+        <div style="z-index: -2;" class="grid-item">
           <img src="images/coming_soon.jpg" alt="">
         </div>
-        <div class="grid-item">
+        <div style="z-index: -2;" class="grid-item">
           <img src="images/coming_soon.jpg" alt="">
         </div>
-        <div class="grid-item">
+        <div style="z-index: -2;" class="grid-item">
           <img src="images/coming_soon.jpg" alt="">
         </div>
-        <div class="grid-item">
+        <div style="z-index: -2;" class="grid-item">
           <img src="images/coming_soon.jpg" alt="">
         </div>
       
@@ -115,11 +115,11 @@
         </div>
       </footer>
 
-<script src="scripts/other.js"></script>
+<script src="./scripts/other.js"></script>
 <script>
   // Функция для обработки клика на картинку
 function handleImageClick(event) {
-  const episodeId = event.target.id;
+  const episodeId = event.target.dataset.episodeId;
 
   // Переход на другую страницу с передачей номера серии через параметр URL
   window.location.href = `/telepuzis_playa.html?episode=${episodeId}`;
@@ -134,11 +134,22 @@ imageElements.forEach((imageElement, index) => {
   const episodeNumber = index + 1;
 
   // Установка атрибута "data-episode-id" с номером серии для передачи на другую страницу
-  imageElement.id = episodeNumber;
+  imageElement.dataset.episodeId = episodeNumber;
 
   // Добавление обработчика клика на картинку
   imageElement.addEventListener('click', handleImageClick);
 });
+const playButtonElements = document.querySelectorAll(".playbuttonvid");
+playButtonElements.forEach((imageElement, index) => {
+  // Получение номера серии из индекса элемента
+  const episodeNumber = index + 1;
+
+  // Установка атрибута "data-episode-id" с номером серии для передачи на другую страницу
+  imageElement.dataset.episodeId = episodeNumber;
+
+  // Добавление обработчика клика на картинку
+  imageElement.addEventListener('click', handleImageClick);
+})
 
 </script>
 

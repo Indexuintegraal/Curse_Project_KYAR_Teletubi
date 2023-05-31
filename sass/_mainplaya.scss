@@ -1,3 +1,4 @@
+@use "variables" as *;
 @font-face {
     font-family: myFont;
     src: url('../fonts/Architun.ttf');
@@ -73,16 +74,15 @@ video {
     
   }
   .sidebar {
-    position: relative;
-    top: 0px; /* Учитывайте высоту блока player-container */
-    left: 0;
+    // position: relative;
+    // top: 0px; /* Учитывайте высоту блока player-container */
+    // left: 0;
     padding-left:20px;
     width: 100%;
-    height: fit-content; /* Учитывайте высоту блока player-container и размеры header и footer */
+    height: min-content; /* Учитывайте высоту блока player-container и размеры header и footer */
     background-color: $MainColor;
     overflow-x: auto; /* Используйте горизонтальную прокрутку, если содержимое не помещается */
-    $FontColor-space: nowrap; /* Предотвращает перенос содержимого на новую строку */
-    width: 100%;
+    white-space: nowrap; /* Предотвращает перенос содержимого на новую строку */
   }
   
   .sideimg {

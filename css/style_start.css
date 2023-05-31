@@ -96,7 +96,9 @@ footer {
   justify-content: space-between;
   background-color: black;
   height: 77px;
+  min-height: 77px;
   align-items: center;
+  z-index: 1;
 }
 footer p {
   margin: 5px;
@@ -135,9 +137,11 @@ footer p {
   margin: 0;
 }
 .footer-content__menu-contacts-nav ul li {
-  border-bottom: 2px solid #8e8e8e;
   text-align: center;
   width: 100%;
+}
+.footer-content__menu-contacts-nav ul li:not(:last-child) {
+  border-bottom: 2px solid #8e8e8e;
 }
 .footer-content__menu-contacts-nav ul li a {
   width: auto;
@@ -261,11 +265,6 @@ main {
     width: auto;
     padding: 10px;
     margin: 0;
-  }
-  body {
-    background: url("../images/teletubi.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
   }
   .opisanie {
     flex-basis: 100%;

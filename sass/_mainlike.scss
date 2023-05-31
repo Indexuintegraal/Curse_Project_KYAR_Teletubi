@@ -1,3 +1,4 @@
+@use "variables" as *;
 @font-face{
     font-family: circleRegular;
     src: url('../fonts/circle/Circe-Regular.ttf');
@@ -5,8 +6,10 @@
 body {
     font-family:circleRegular;
     // background: linear-gradient(to right, rgba(0,0,0,0.85) 100%,  rgba(0,0,0,0.6) 50% ) , url("/images/teletubi.jpg");
+    background: url("../images/teletubi.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     margin: 0;
     background-color: rgba(37, 37, 37, 0.999);
     
@@ -21,7 +24,7 @@ body {
   }
   .opisanie{
     padding-top: 20%;
-    color:$FontColor;
+    color: $FontColor;
   }
   .play-prompt{
     color: $FontColor;
@@ -67,32 +70,35 @@ body {
   position: relative;
   z-index:0;
   transition: transform 0.2s ease-out;
-  
-}
-.grid-item h3 {
-  position: absolute;
-  top: 80%;
-  right: 70%;
-}
-
-/* Grid item image */
-.grid-item img {
-  max-width: 100%;
-  height: 100%;
-}
-
-/* Grid item title */
-.grid-item h3 {
-  margin-top: 10px;
-  font-size: 1.2em;
-  font-weight:lighter;
+  h3 {
+    position: absolute;
+    top: 80%;
+    right: 70%;
+  }
+  /* Grid item image */
+  img {
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  } 
+  /* Grid item title */
+  h3 {
+    margin-top: 10px;
+    font-size: 1.2em;
+    font-weight:lighter;
+  }
+  a {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 /* Responsive styling */
 @media (max-width:1000px)  {
-  body{
-    height: 95vh;
-  }
+  // body{
+  //   height: 95vh;
+  // }
   main{
     height: 100vh;
   }
@@ -102,19 +108,17 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
     margin: 100px auto;
-    height: 90%;
+    // height: 90%;
     /* overflow: hidden; */
   }
 }
 
-.description{
+.description {
   color:$FontColor;
   background-color: black;
   margin: 0;
   font-size: 18px;
   width: 100%;
-  
-
 }
 .description p, h3{
   padding-left: 5px;
@@ -154,7 +158,7 @@ transition: transform 0.2s ease-out;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 20px;
       margin: 100px auto;
-      height: 100%;
+      // height: 100%;
       /* overflow: hidden; */
     }
   }
