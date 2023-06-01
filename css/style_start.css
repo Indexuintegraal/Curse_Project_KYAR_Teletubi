@@ -172,7 +172,6 @@ main {
   height: 100vh;
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 90px;
 }
 
 .opisanie {

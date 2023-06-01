@@ -1,13 +1,22 @@
 @use "header";
 @use "footer";
 @use "mainlargeseries";
-
+@use "variables";
+*{
+    font-family: circleRegular;
+    color:white;
+}
 html { height: 100%; }
 body {
     display: flex;
     margin: 0;
     height: 100%;
     flex-direction: column;
+    background: linear-gradient(to right, rgba(0,0,0,0.5) 30%,rgba(0,0,0,0.5) 100%), url("../images/teletubi.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: black;
 }
 
 .main {
@@ -28,10 +37,10 @@ body {
 
 .section {
     &-img {
-        min-width: 200px;
-        min-height: 200px;
+        min-width: 250px;
+        max-height: 250px;
         // height: auto;
-        flex: 1 1 100%;
+        flex: 1 1 90%;
         object-fit: contain;
         border-radius: 10%;
         background-color: #eee;
